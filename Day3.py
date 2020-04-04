@@ -14,3 +14,15 @@
 #	If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
 
+
+#### SOLUTION
+
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        # Using Dynamic Programming
+        initialSubarray = nums[0]
+        max_sum = initialSubarray
+        for i in range(1, len(nums)):
+            initialSubarray = max(initialSubarray + nums[i], nums[i])
+            max_sum = max(initialSubarray, max_sum)
+        return max_sum
