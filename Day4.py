@@ -15,7 +15,7 @@
 
 
 
-#### SOLUTION 
+#### SOLUTION 1
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
@@ -29,5 +29,22 @@ class Solution:
                 c += 1
         for j in range(c, len(nums)):
             nums[j] = 0
+        
+        return nums
+
+### SOLUTION 2
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        c = 0
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                temp = nums[c]
+                nums[c] = nums[i]
+                nums[i] = temp
+                c += 1
         
         return nums
