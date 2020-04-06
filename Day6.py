@@ -34,4 +34,4 @@ class Solution(object):
                 anagrams[inter_s].append(s)
             else:
                 anagrams[inter_s] = [s]
-        return anagrams.values()
+        return list(anagrams.values())
