@@ -22,4 +22,11 @@
 #	Output: 3
 #	Explanation: 0, 1 and 2 are counted cause 1, 2 and 3 are in arr.
 
+# Example 4:
+#	Input: arr = [1,1,2,2]
+#	Output: 2
+#	Explanation: Two 1s are counted cause 2 is in arr.
+
+
+
 
