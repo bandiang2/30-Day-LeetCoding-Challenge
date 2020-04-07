@@ -33,5 +33,21 @@
 #	2) 0 <= arr[i] <= 1000
 
 
+## My Solution 
 
+from collections import defaultdict
+class Solution(object):
+    def countElements(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: int
+        """
+        counts = defaultdict(int)
+        for item in arr:
+            counts[item] += 1
+        output = 0
+        for k in counts.keys():
+            if k+1 in counts:
+                output += counts[k]
+        return output
 
