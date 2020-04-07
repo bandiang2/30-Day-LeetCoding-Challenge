@@ -27,6 +27,11 @@
 #	Output: 2
 #	Explanation: Two 1s are counted cause 2 is in arr.
 
+# Constraints:
+
+#	1) 1 <= arr.length <= 1000
+#	2) 0 <= arr[i] <= 1000
+
 
 
 
