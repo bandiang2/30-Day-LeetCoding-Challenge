@@ -17,7 +17,7 @@
 # Note: The length of the given binary array will not exceed 50,000.
 
 # Solution
-
+#
 from collections import defaultdict
 class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
